@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="text" class="inp" placeholder="Type Your Name">
+        <button type="submit" class="sub">Submit</button>
+
+ <div id="print"></div>
+
+<script type="text/javascript">
+var submit=document.querySelector('.sub');
+var input=document.querySelector('.inp');
+submit.addEventListener("click",calc,false);
+input.addEventListener("mousehover",calco,false);
+
+function calc(){
+document.getElementById('print').innerHTML = input.value;
+}
+
+function calco(){
+console.log('hi')
+}
+</script>
+
+</body>
+</html>
